@@ -25,7 +25,7 @@ Vue.config.productionTip = false
 
 // mount axios to `Vue.$http` and `this.$http`
 Vue.use(VueAxios)
-// use pro-layout components
+    // use pro-layout components
 Vue.component('pro-layout', ProLayout)
 Vue.component('page-container', PageHeaderWrapper)
 Vue.component('page-header-wrapper', PageHeaderWrapper)
@@ -33,10 +33,10 @@ Vue.component('page-header-wrapper', PageHeaderWrapper)
 window.umi_plugin_ant_themeVar = themePluginConfig.theme
 
 new Vue({
-  router,
-  store,
-  i18n,
-  // init localstorage, vuex
-  created: bootstrap,
-  render: h => h(App)
+    router,
+    store,
+    i18n,
+    // init localstorage, vuex
+    created: bootstrap,
+    render: h => h(App)
 }).$mount('#app')
